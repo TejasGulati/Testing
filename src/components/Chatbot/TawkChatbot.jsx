@@ -3,8 +3,10 @@ import React, { useEffect } from 'react';
 
 const TawkChatbot = () => {
   useEffect(() => {
+
+    
     const script = document.createElement('script');
-    script.src = 'https://embed.tawk.to/YOUR_TAWK_PROPERTY_ID/default';
+    script.src = 'https://embed.tawk.to/67e41762ec7c9f190e0dc869/default';
     script.async = true;
     document.body.appendChild(script);
 
