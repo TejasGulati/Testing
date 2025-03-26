@@ -1,7 +1,7 @@
 // src/pages/Home.jsx
 import React from 'react';
 import AIVisualization from '@/components/3D/AIVisualization';
-import { Button } from '@/components/ui/button';
+import  Button  from '@/components/ui/Button';
 
 const Home = () => {
   return (

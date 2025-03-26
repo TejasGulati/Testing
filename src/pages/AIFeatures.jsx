@@ -2,7 +2,8 @@
 // src/pages/AIFeatures.jsx
 import React, { useState } from 'react';
 import { generateContent } from '@/services/aiService';
-import { Button } from '@/components/ui/button';
+import  Button  from '@/components/ui/Button';
+
 import { Textarea } from '@/components/ui/textarea';
 
 const AIFeatures = () => {

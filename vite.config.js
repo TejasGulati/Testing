@@ -9,7 +9,7 @@ export default defineConfig({
       '@': path.resolve(__dirname, 'src'),
     },
   },
-  base: process.env.VITE_BUILD_TYPE ?? './Testing',
+  base: process.env.VITE_BUILD_TYPE ?? './',
   build: {
     outDir: 'dist',
     rollupOptions: {
