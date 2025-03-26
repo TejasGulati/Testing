@@ -1,16 +1,15 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
-import path from 'path';
 
 export default defineConfig({
   plugins: [react()],
-  resolve: {
-    alias: {
-      '@': path.resolve(__dirname, 'src')  // ✅ Fix for import alias
-    }
-  },
-  base: './',
+  base: process.env.VITE_BUILD_TYPE || './', // Ensures flexibility based on environment variable
   build: {
-    outDir: 'dist'
-  }
+    outDir: 'dist',
+  },
+  css: {
+    postcss: {
+      plugins: [],
+    },
+  },
 });
